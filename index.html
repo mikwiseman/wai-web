@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WaiVPN</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background: #0d1117;
+            color: #e6edf3;
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        a { color: #238636; text-decoration: none; transition: color 0.2s; }
+        a:hover { color: #2ea043; }
+        header {
+            padding: 24px 32px;
+            border-bottom: 1px solid #21262d;
+        }
+        header .logo {
+            font-size: 20px;
+            font-weight: 600;
+            color: #e6edf3;
+            letter-spacing: -0.5px;
+        }
+        header .logo span { color: #238636; }
+        main {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 64px 32px;
+        }
+        .hero {
+            text-align: center;
+            max-width: 560px;
+        }
+        .hero h1 {
+            font-size: 48px;
+            font-weight: 700;
+            letter-spacing: -1.5px;
+            margin-bottom: 16px;
+        }
+        .hero h1 span { color: #238636; }
+        .hero p {
+            font-size: 18px;
+            color: #8b949e;
+            margin-bottom: 48px;
+        }
+        .links {
+            display: flex;
+            gap: 24px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .links a {
+            display: inline-block;
+            padding: 14px 32px;
+            border: 1px solid #238636;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 500;
+            transition: all 0.2s;
+        }
+        .links a:first-child {
+            background: #238636;
+            color: #fff;
+        }
+        .links a:first-child:hover {
+            background: #2ea043;
+        }
+        .links a:last-child:hover {
+            background: rgba(35, 134, 54, 0.1);
+        }
+        footer {
+            padding: 24px 32px;
+            border-top: 1px solid #21262d;
+            text-align: center;
+            color: #484f58;
+            font-size: 14px;
+        }
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 32px; }
+            .hero p { font-size: 16px; }
+            .links { flex-direction: column; gap: 12px; }
+            .links a { width: 100%; }
+            main { padding: 48px 24px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Wai<span>VPN</span></div>
+    </header>
+    <main>
+        <div class="hero">
+            <h1>Wai<span>VPN</span></h1>
+            <p>Fast, private, no-log VPN by WaiWai, LLC.</p>
+            <div class="links">
+                <a href="support.html">Support</a>
+                <a href="privacy.html">Privacy Policy</a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        &copy; 2026 WaiWai, LLC. All rights reserved.
+    </footer>
+</body>
+</html>

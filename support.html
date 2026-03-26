@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - WaiVPN</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background: #0d1117;
+            color: #e6edf3;
+            line-height: 1.7;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        a { color: #238636; text-decoration: none; transition: color 0.2s; }
+        a:hover { color: #2ea043; }
+        header {
+            padding: 24px 32px;
+            border-bottom: 1px solid #21262d;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        header .logo {
+            font-size: 20px;
+            font-weight: 600;
+            color: #e6edf3;
+            letter-spacing: -0.5px;
+        }
+        header .logo span { color: #238636; }
+        header nav a {
+            font-size: 14px;
+            color: #8b949e;
+        }
+        header nav a:hover { color: #e6edf3; }
+        main {
+            flex: 1;
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 48px 32px;
+            width: 100%;
+        }
+        h1 {
+            font-size: 36px;
+            font-weight: 700;
+            letter-spacing: -1px;
+            margin-bottom: 8px;
+        }
+        .subtitle {
+            color: #484f58;
+            font-size: 16px;
+            margin-bottom: 48px;
+        }
+        h2 {
+            font-size: 22px;
+            font-weight: 600;
+            margin-top: 40px;
+            margin-bottom: 16px;
+            color: #e6edf3;
+        }
+        p {
+            color: #8b949e;
+            font-size: 16px;
+            margin-bottom: 12px;
+        }
+        .faq-item {
+            border: 1px solid #21262d;
+            border-radius: 8px;
+            margin-bottom: 12px;
+            overflow: hidden;
+        }
+        .faq-item summary {
+            padding: 16px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 500;
+            color: #e6edf3;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            transition: background 0.2s;
+        }
+        .faq-item summary:hover {
+            background: #161b22;
+        }
+        .faq-item summary::after {
+            content: '+';
+            font-size: 20px;
+            color: #238636;
+            font-weight: 300;
+            flex-shrink: 0;
+            margin-left: 16px;
+        }
+        .faq-item[open] summary::after {
+            content: '\2212';
+        }
+        .faq-item summary::-webkit-details-marker { display: none; }
+        .faq-answer {
+            padding: 0 20px 16px;
+            color: #8b949e;
+            font-size: 15px;
+            line-height: 1.7;
+        }
+        .faq-answer ol {
+            padding-left: 20px;
+            margin-top: 8px;
+        }
+        .faq-answer li {
+            margin-bottom: 6px;
+        }
+        .contact-card {
+            margin-top: 48px;
+            padding: 32px;
+            border: 1px solid #21262d;
+            border-radius: 12px;
+            background: #161b22;
+            text-align: center;
+        }
+        .contact-card h2 {
+            margin-top: 0;
+            margin-bottom: 8px;
+        }
+        .contact-card p {
+            margin-bottom: 20px;
+        }
+        .contact-card a.email-btn {
+            display: inline-block;
+            padding: 12px 28px;
+            background: #238636;
+            color: #fff;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 500;
+            transition: background 0.2s;
+        }
+        .contact-card a.email-btn:hover {
+            background: #2ea043;
+        }
+        .diagnostics {
+            margin-top: 32px;
+            padding: 24px;
+            border: 1px solid #21262d;
+            border-radius: 12px;
+        }
+        .diagnostics h3 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        .diagnostics p {
+            font-size: 15px;
+        }
+        .diagnostics code {
+            background: #21262d;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 14px;
+            color: #e6edf3;
+        }
+        footer {
+            padding: 24px 32px;
+            border-top: 1px solid #21262d;
+            text-align: center;
+            color: #484f58;
+            font-size: 14px;
+        }
+        @media (max-width: 600px) {
+            h1 { font-size: 28px; }
+            main { padding: 32px 24px; }
+            .contact-card { padding: 24px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">Wai<span>VPN</span></a>
+        <nav><a href="privacy.html">Privacy Policy</a></nav>
+    </header>
+    <main>
+        <h1>Support</h1>
+        <p class="subtitle">Get help with WaiVPN</p>
+
+        <h2>Frequently Asked Questions</h2>
+
+        <details class="faq-item">
+            <summary>How do I activate WaiVPN?</summary>
+            <div class="faq-answer">
+                <ol>
+                    <li>Open the WaiVPN app.</li>
+                    <li>Enter your invite code on the activation screen.</li>
+                    <li>Tap <strong>Activate</strong>. The app will verify your code and download your VPN configuration automatically.</li>
+                </ol>
+                <p>If activation fails, make sure your invite code is correct and that you have an internet connection. Each invite code can only be used once.</p>
+            </div>
+        </details>
+
+        <details class="faq-item">
+            <summary>How do I connect to the VPN?</summary>
+            <div class="faq-answer">
+                <p>After activation, tap the <strong>Connect</strong> button on the main screen. The app will establish a secure connection to the nearest server. You may be asked to allow VPN configuration on first use &mdash; this is required by your operating system.</p>
+                <p>The status indicator will turn green when you are connected.</p>
+            </div>
+        </details>
+
+        <details class="faq-item">
+            <summary>What if the connection fails?</summary>
+            <div class="faq-answer">
+                <p>If you cannot connect, try these steps:</p>
+                <ol>
+                    <li><strong>Switch servers</strong> &mdash; tap the server selector and choose a different location.</li>
+                    <li><strong>Switch connection method</strong> &mdash; if available, try toggling between connection methods in Settings.</li>
+                    <li><strong>Check your internet</strong> &mdash; make sure you have a working connection without the VPN.</li>
+                    <li><strong>Restart the app</strong> &mdash; force-close WaiVPN and reopen it.</li>
+                    <li><strong>Run diagnostics</strong> &mdash; use the built-in diagnostics tool (see below) and share the report with us.</li>
+                </ol>
+            </div>
+        </details>
+
+        <details class="faq-item">
+            <summary>How do I switch servers?</summary>
+            <div class="faq-answer">
+                <p>Tap the server name or location indicator on the main screen. A list of available servers will appear with their current latency. Tap a server to switch to it. If you are currently connected, the app will reconnect automatically through the new server.</p>
+            </div>
+        </details>
+
+        <details class="faq-item">
+            <summary>Which platforms are supported?</summary>
+            <div class="faq-answer">
+                <p>WaiVPN is available on iOS, Android, and macOS. All platforms share the same account and invite code.</p>
+            </div>
+        </details>
+
+        <div class="diagnostics">
+            <h3>Built-in Diagnostics</h3>
+            <p>WaiVPN includes a diagnostics tool that tests your connection and generates a report. Open the app, go to <code>Settings</code> &rarr; <code>Diagnostics</code>, and tap <strong>Run Diagnostics</strong>. You can share the report directly via email when contacting support.</p>
+        </div>
+
+        <div class="contact-card">
+            <h2>Still need help?</h2>
+            <p>We typically respond within 24 hours.</p>
+            <a href="mailto:hi@mikwiseman.com" class="email-btn">hi@mikwiseman.com</a>
+        </div>
+    </main>
+    <footer>
+        &copy; 2026 WaiWai, LLC. All rights reserved.
+    </footer>
+</body>
+</html>
